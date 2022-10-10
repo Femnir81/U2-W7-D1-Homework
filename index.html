@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="input-group mb-3">
+        <span class="input-group-text">First name</span>
+        <input
+          type="text"
+          aria-label="First name"
+          id="nome"
+          class="form-control"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Last name</span>
+        <input
+          type="text"
+          aria-label="Last name"
+          id="cognome"
+          class="form-control"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Date of birth</span>
+        <input type="date" id="birthday" name="birthday" class="form-control" />
+      </div>
+      <button type="button" class="btn btn-success" onclick="invioDati()">
+        Success
+      </button>
+    </form>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="text-center" scope="col">Nome</th>
+          <th class="text-center" scope="col">Cognome</th>
+          <th class="text-center" scope="col">Birthday</th>
+        </tr>
+      </thead>
+      <tbody id="elenco"></tbody>
+    </table>
+    <div id="epicode"></div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
